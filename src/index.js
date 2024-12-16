@@ -1,5 +1,15 @@
 import _ from 'lodash';
 
+import './stylesheet.css'
+
+
+/*
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context('./image', false, /\.(png|jpe?g|svg)$/));
+*/
 function component() {
   const element = document.createElement('div');
 
