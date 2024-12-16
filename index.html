@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="top-panel">
+                <div class="top-panel__l_element">
+                    <div class="top-panel__item">
+                        <a href="#">О нас</a>
+                    </div>
+                    <div class="top-panel__item">
+                        <a href="#">Доставка</a>
+                    </div>
+                    <div class="top-panel__item">
+                        <a href="">Оплата</a>
+                    </div>
+                    <div class="top-panel__item">
+                        <a href="#">Контакты</a>
+                    </div>
+                </div>
+                <div class="top-panel__r_element">
+                    <div class="top-panel__item">
+                        <div class="item__logo">
+
+                        </div>
+                        <a href="#">Войти</a>
+                    </div>
+                    <div class="top-panel__item">
+                        <div class="item__dropdown">
+                            <div class="btn-group dropdown">
+                                <button 
+                                class="btn btn-link dropdown-toggle dropdown-menu_text-decoration" 
+                                data-toggle="dropdown" 
+                                aria-expanded="false">
+                                р. | ru
+                                </button>
+                                <ul class="dropdown-menu dropdown-menu_text-decoration">
+                                    <li><button class="currency-select btn btn-link btn-block" type="button" name="EUR">€ | Euro</button></li>
+                                    <li><button class="currency-select btn btn-link btn-block" type="button" name="USD">$ US | Dollar</button></li>
+                                    <li><button class="currency-select btn btn-link btn-block" type="button" name="UAH">грн. | Гривна</button></li>
+                                    <li><button class="currency-select btn btn-link btn-block" type="button" name="RUB">Р. | Рубль</button></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main">
+                <div class="company-logo">
+                    <div class="logo__text ">aura</div>
+                </div>
+                <div class="search-block">
+                    <div class="dropdown-catalog">
+                        <button class="dropdown-catalog__button dropdown-catalog__button_size dropdown-catalog__button_dark" type="button" id="dropdown-catalog__button">
+                            <span class="dropdown-catalog__icon">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            Каталог
+                        </button>
+                    </div>
+                    <div class="search-field">
+                        <i class="search-field__icon">
+                            <img src="image/icon/Icons.svg" alt="поиск">
+                        </i>
+                        <input class="search-field__input" type="text">
+                    </div>
+                </div>
+                <div class="contact-telephone">
+                    <div class="contact-telephone__number">
+                        <a href="#">+7 911 999 00 99</a>
+                    </div>
+                    <div class="contact-telephone__callback">
+                        <a href="#">Заказать обратный звонок</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <a class="menu__item" href="#">
+                        <span class="menu__item-icon" >
+                            <img src="image/icon/compare_1.svg" alt="сравнение">
+                            <span class="menu__item-counter">5</span>
+                        </span>
+                        <span class="menu__item-label">Сравнение</span> 
+                    </a>
+                    <a class="menu__item" href="#">
+                        <span class="menu__item-icon" >
+                            <img src="image/icon/wishlist_1.svg" alt="сравнение">
+                            <span class="menu__item-counter">23</span>
+                        </span>
+                        <span class="menu__item-label">Избранное</span>
+                    </a>
+                    <a class="menu__item item__cart_size" href="#">
+                        <span class="menu__item-icon" >
+                            <img src="image/icon/card_1.svg" alt="корзина">
+                            <span class="menu__item-counter">16</span>
+                        </span>
+                        <span class="menu__item-label">Корзина</span>
+                    </a>
+                </div>
+            </div>
+            <div class="tag-stack">
+                <a class="tag-stack__item tag-stack__item_light" href="#">Мебель</a>
+                <a class="tag-stack__item tag-stack__item_light" href="#">Кухни</a>
+                <a class="tag-stack__item tag-stack__item_light" href="#">Освещение</a>
+                <a class="tag-stack__item tag-stack__item_light" href="#">Столы и стулья</a>
+                <a class="tag-stack__item tag-stack__item_light" href="#">Офисная мебель</a>
+                <a class="tag-stack__item tag-stack__item_light" href="#">Диваны и кресла</a>
+                <a class="tag-stack__item tag-stack__item_red" href="#">Акции %</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container">
+        <nav class="catalog-menu">
+            <div class="catalog catalog-cascade">
+                <ul class="catalog__list">
+                    <li class="catalog__item ">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталога">
+                            </span>
+                            <span class="catalog-item__label">
+                                Мелкая кухонная техника
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow"></span>
+                            </span>
+                        </a>
+                        <div class="sub-catalog">
+                            <ul class="sub-catalog__list">
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Грили
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Кухонные комбайны
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Микроволновые печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Миксеры и блендеры
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Мини-печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталога">
+                            </span>
+                            <span class="catalog-item__label">
+                                Наушники
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow"></span>
+                            </span>
+                            </span>
+                        </a>
+                        <div class="sub-catalog">
+                            <ul class="sub-catalog__list">
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Грили
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Кухонные комбайны
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Микроволновые печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Миксеры и блендеры
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Мини-печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталога">
+                            </span>
+                            <span class="catalog-item__label">
+                                Посуда
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow">
+                                </span>
+                            </span>
+                            
+                        </a>
+                        <div class="sub-catalog">
+                            <ul class="sub-catalog__list">
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Грили
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Кухонные комбайны
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                    <div class="sub-catalog">
+                                        <ul class="sub-catalog__list">
+                                            <li class="catalog__item">
+                                                <a class="catalog-item__wrap" href="">
+                                                    <span class="catalog-item__label">
+                                                        Мультиварки
+                                                    </span>
+                                                    <span class="catalog-item__arrow_wrap">
+                                                        <span class="catalog-item__arrow"></span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="catalog__item">
+                                                <a class="catalog-item__wrap" href="">
+                                                    <span class="catalog-item__label">
+                                                        Мультипекари и электровафельницы
+                                                    </span>
+                                                    <span class="catalog-item__arrow_wrap">
+                                                        <span class="catalog-item__arrow"></span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="catalog__item">
+                                                <a class="catalog-item__wrap" href="">
+                                                    <span class="catalog-item__label">
+                                                        Мясорубки
+                                                    </span>
+                                                    <span class="catalog-item__arrow_wrap">
+                                                        <span class="catalog-item__arrow"></span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Микроволновые печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Миксеры и блендеры
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Мини-печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталога">
+                            </span>
+                            <span class="catalog-item__label">
+                                Пылесосы и аксессуары
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow"></span>
+                            </span>
+                        </a>
+                        <div class="sub-catalog">
+                            <ul class="sub-catalog__list">
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Грили
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Кухонные комбайны
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Микроволновые печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Миксеры и блендеры
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="catalog__item">
+                                    <a class="catalog-item__wrap" href="">
+                                        <span class="catalog-item__label">
+                                            Мини-печи
+                                        </span>
+                                        <span class="catalog-item__arrow_wrap">
+                                            <span class="catalog-item__arrow"></span>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="catalog catalog-horizon catalog-horizon_active">
+                <ul class="catalog__list">
+                    <li class="catalog__item">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталог">
+                            </span>
+                            <span class="catalog-item__label">
+                                Мелкая кухонная техника
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow"></span>
+                            </span>
+                        </a>
+                        <div class="sub-catalog sub-catalog_horizon">
+                            <div class="horizon-sub-catalog__wrap">
+                                <ul class="horizon__list column_2">
+                                    <a class="horizon-list__title-link" href=""></a>
+                                    <li class="horizon__item">
+                                        <a class="horizon-item__title" href=""></a>
+                                        <ul class="horizon-item__sub-list">
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Грили</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Кухонные комбайны</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Микроволновые печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Миксеры и блендеры</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мини-печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мультиварки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="horizon__item">
+                                        <a class="horizon-item__title" href=""></a>
+                                        <ul class="horizon-item__sub-list">
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Грили</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Кухонные комбайны</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Микроволновые печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Миксеры и блендеры</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мини-печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мультиварки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="horizon__item">
+                                        <a class="horizon-item__title" href=""></a>
+                                        <ul class="horizon-item__sub-list">
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Грили</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Кухонные комбайны</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Микроволновые печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Миксеры и блендеры</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мини-печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мультиварки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="horizon__item">
+                                        <a class="horizon-item__title" href=""></a>
+                                        <ul class="horizon-item__sub-list">
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">-Грили</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Кухонные комбайны</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Микроволновые печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Миксеры и блендеры</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мини-печи</a>
+                                            </li>
+                                            <li class="horizon__sub-item">
+                                                <a class="horizon-sub-item__label" href="">Мультиварки</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sub-catalog-horizon__banner">
+                                <div class="sub-catalog-banner">
+                                    <img src="image/banner/image_banner.png" alt="banner">
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталог">
+                            </span>
+                            <span class="catalog-item__label">
+                                Наушники
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталог">
+                            </span>
+                            <span class="catalog-item__label">
+                                Посуда
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow"></span>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="catalog__item">
+                        <a class="catalog-item__wrap" href="">
+                            <span class="catalog-item__icon">
+                                <img src="image/icon/catalog_Icon.svg" alt="иконка-каталог">
+                            </span>
+                            <span class="catalog-item__label">
+                                Пылесосы и аксессуары
+                            </span>
+                            <span class="catalog-item__arrow_wrap">
+                                <span class="catalog-item__arrow"></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $("#dropdown-catalog__button").click(function(){
+                
+                if($('.dropdown-catalog__icon').hasClass("open")){
+                    $(".dropdown-catalog__icon").removeClass("open");
+                    $(".catalog-menu").removeClass("catalog-menu_open");
+                }else {
+                    
+                    $(".dropdown-catalog__icon").addClass("open");
+                    $(".catalog-menu").addClass("catalog-menu_open");
+                }
+                
+            })
+        })
+        $('.catalog__item').hover(function() {
+            //$('.catalog__sub-catalog').hide();
+            //$('.sub-menu_' + $(this).data('sub-menu')).show();
+            //var obj = $('.sub-menu_' + $(this).data('sub-menu'));
+            //console.log(obj);
+        })
+        $('.catalog__item').hover(function() {
+            //$('.sub-catalog').hide();
+            //$(this).children('.sub-catalog').show();
+        })
+          
+    </script>
+</body>
+</html>
