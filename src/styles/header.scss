@@ -1,0 +1,61 @@
+@use 'fonts';
+@use 'color_sheme_default';
+
+.header__tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
+    color: color_sheme_default.$text-main-color
+  }
+}
+.header__logo {
+  @include fonts.krona;
+  font-size: 2.8rem;
+  color: color_sheme_default.$text-title-color;
+}
+.menu__wrap {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+.icon__menu {
+  width: 30px;
+  height: 30px;
+}
+.header__search {
+  position: relative;
+}
+.label__search {
+  position: absolute;
+}
+.phone__number {
+  font-size: 2rem;
+  
+  a {
+    @include fonts.montserrat-bold;
+    color: color_sheme_default.$text-title-color;
+    letter-spacing: -0.06rem;
+  }
+}
+.phone__callback {
+  font-size: 1.1rem;
+  
+  a {
+    color: color_sheme_default.$text-title-color;
+    letter-spacing: .0045rem;
+  }
+}
+.button__name {
+  font-size: 1rem;
+  color: color_sheme_default.$text-title-color;
+  
+}
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

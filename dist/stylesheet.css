@@ -1,6 +1,10 @@
 /*!************************************************************************************************************!*\
   !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./stylesheet.scss ***!
   \************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap&amp;subset=cyrillic);
+/*!****************************************************************************************************************!*\
+  !*** css ../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/dist/cjs.js!./stylesheet.scss (1) ***!
+  \****************************************************************************************************************/
 /* Reset and base styles  */
 * {
   padding: 0px;
@@ -88,12 +92,59 @@ legend {
   display: block;
 }
 
+.nav-top {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-right: 2.15em;
+}
+
+.nav-top__list {
+  display: inline-flex;
+  gap: 2.45em;
+}
+
+.currency__list {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  min-width: 11rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0rem 1rem 1rem;
+  align-items: end;
+  justify-content: center;
+}
+
+.nav-top__right-panel {
+  font-family: "Montserrat", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.currency {
+  text-transform: uppercase;
+  position: relative;
+}
+
+.dropdown_active {
+  visibility: visible;
+}
+
 html {
-  font-size: 14px;
+  font-size: 0.78rem;
 }
 
 .container {
-  width: 1470px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+  font-family: "Montserrat", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #929292;
+}
+.container a {
+  color: #929292;
 }

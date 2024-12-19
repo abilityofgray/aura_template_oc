@@ -18,11 +18,13 @@
   <div class="nav-top__right-panel">
     <ul class="nav-top__list">
       <li class="nav-top__item">
-        <a href="#">Войти</a>
+        
+        <svg class="icon__login"><use xlink:href="#login"></svg>
+        <a class="nav-top__button btn__login" href="#">Войти</a>
       </li>
       <li class="nav-top__item">
         <div class="currency">
-          <a role="button" aria-expanded="false"
+          <a href="#" role="button" 
           data-currency ="rub" class="currency__button">р. | ru</a>
           <ul class="currency__list">
             <li class="currency__item">
@@ -33,7 +35,7 @@
             <li class="currency__item">
               <a role="button" class="currency__button"
               data-currency ="usd"
-              href="">$ US | Dollar</a>
+              href="">$ USD | Dollar</a>
             </li>
             <li class="currency__item">
               <a role="button" class="currency__button"
@@ -47,8 +49,6 @@
             </li>
           </ul>
         </div>
-        
-        
       </li>
     </ul>
   </div>

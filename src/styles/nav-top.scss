@@ -1,0 +1,52 @@
+@use "fonts";
+@use "color_sheme_default";
+
+.nav-top {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  padding-top: 9px;
+  padding-right: 2.15em;
+  a {
+    color: color_sheme_default.$text-main-color;
+  }
+  
+}
+.nav-top__left-panel {
+  
+}
+.nav-top__list {
+  display: inline-flex;
+  gap: 2.45em;
+}
+.currency__list {
+  visibility: hidden;
+  display: flex;
+  position: absolute;
+  min-width: 11rem;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0rem 1rem 1rem;
+  align-items: end;
+  justify-content: center
+
+}
+.nav-top__right-panel {
+  @include fonts.montserrat-meduim;
+
+  a {
+    color: color_sheme_default.$text-title-color;
+  }
+}
+.currency {
+  text-transform: uppercase;
+  position: relative;
+}
+.dropdown_active {
+  visibility: visible;
+}
+.icon__login {
+  width: 10px;
+  height: 10px;
+  margin-right: 2px;
+}

@@ -1,7 +1,14 @@
 const path = require('path');
+//import path from 'path';
+//import path from 'node:path';
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+//import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+//import HtmlWebpackPlugin from 'html-webpack-plugin';
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
+//import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
+//import SvgChunkWebpackPlugin from 'svg-chunk-webpack-plugin';
+//const SvgChunkWebpackPlugin = require("svg-chunk-webpack-plugin");
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
@@ -11,6 +18,7 @@ module.exports = {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  
   devServer: {
     static: './dist',
     port: 9000,
@@ -56,6 +64,13 @@ module.exports = {
           //filename: 'img/[name].[hash:8][ext][query]',
         },
       },
+      {
+        test: /\.svg$/,
+        loader: 'svg-sprite-loader'
+      }
+      
+      
+      
     ],
   },
   plugins: [
@@ -70,5 +85,6 @@ module.exports = {
       inject: false,
     }),
     new MiniCssExtractPlugin({ filename: 'stylesheet.css'}),
+    
   ]
 };

@@ -1,8 +1,17 @@
+@use 'fonts';
+@use 'color_sheme_default';
+
 html {
-  font-size: 0,875rem;
+  font-size: 0.78rem;
 }
 .container {
-  width: 1470px;
-  margin-right: auto;
-  margin-left: auto;
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
+  @include fonts.montserrat-regular;
+  color: color_sheme_default.$text-main-color;
+
+  a {
+    
+  }
 }

@@ -1,0 +1,7 @@
+@use 'color_sheme_default';
+
+.input__search {
+  border-radius: 15px;
+  border: 1px solid;
+  border-color: color_sheme_default.$border-color;
+}
