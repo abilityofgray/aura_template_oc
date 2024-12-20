@@ -1,0 +1,7 @@
+.sub-category__list {
+  display: none;
+}
+
+.category__item:hover > .sub-category__list {
+  display: flex;
+}

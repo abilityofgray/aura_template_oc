@@ -1,0 +1,34 @@
+@use "color_sheme_default";
+@use "fonts";
+
+
+.tags__stack {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  min-height: 53px;
+  align-items: center;
+}
+
+@mixin tags-def {
+  background-color: color_sheme_default.$tags-main-color;
+  padding: 5px 15px;
+  border-radius: 15px;
+  color: color_sheme_default.$text-tags-color;
+  font-size: 1rem;
+  @include fonts.montserrat-meduim;
+  
+  flex-shrink: 1;
+  flex-basis: 35px;
+  min-width: fit-content;
+  flex-wrap: nowrap;
+  
+}
+.tags_style {
+  @include tags-def;
+}
+.tags_promo {
+  background-color: color_sheme_default.$tags-promo-color;
+  color: color_sheme_default.$text-promo-color;
+}

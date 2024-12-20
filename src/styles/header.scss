@@ -6,6 +6,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  min-height: 64px;
 
   a {
     color: color_sheme_default.$text-main-color
@@ -15,10 +16,12 @@
   @include fonts.krona;
   font-size: 2.8rem;
   color: color_sheme_default.$text-title-color;
+  margin-right: 10%;
 }
 .menu__wrap {
   display: flex;
   flex-direction: row;
+  align-items: end;
   gap: 1rem;
 }
 .icon__menu {
@@ -29,7 +32,13 @@
   position: relative;
 }
 .label__search {
+  width: 15px;
+  height: 15px;
   position: absolute;
+}
+.input__search {
+  padding: 6px 0px;
+  min-width: 338px;
 }
 .phone__number {
   font-size: 2rem;
@@ -58,4 +67,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.header__l-panel {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 6%;
+}
+.header__r-panel {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  gap: clamp(25px, 93px, 153px);
+  
 }

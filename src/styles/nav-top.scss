@@ -5,8 +5,9 @@
   display: inline-flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 9px;
+  align-items: center;
   padding-right: 2.15em;
+  min-height: 30px;
   a {
     color: color_sheme_default.$text-main-color;
   }

@@ -1,0 +1,18 @@
+.catalog {
+  position: relative;
+  
+}
+.catalog_style {
+  background-color: white;
+  border: solid 1ps red;
+  
+}
+.catalog__wrapper {
+  display: none;
+  position: absolute;
+  width: 1000px;
+  height: 600px;
+}
+.catalog_open {
+  display: block;
+}
