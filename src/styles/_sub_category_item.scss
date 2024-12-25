@@ -1,0 +1,19 @@
+@use 'fonts';
+@use 'color_sheme_default.scss';
+
+.sub-category__item {
+  padding: 1.5rem;
+  /*
+  &:hover {
+    background-color: color_sheme_default.$item-hover-color;
+  }
+  */
+  a {
+    color: color_sheme_default.$text-title-color;
+    @include fonts.montserrat-regular;
+    font-size: 1.15rem;
+  }
+  a:hover {
+    color: color_sheme_default.$text-hover-color;
+  }
+}

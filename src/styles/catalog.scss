@@ -10,8 +10,9 @@
 .catalog__wrapper {
   display: none;
   position: absolute;
-  width: 1000px;
-  height: 600px;
+  max-width: 263px;
+  min-height: 403px;
+  
 }
 .catalog_open {
   display: block;

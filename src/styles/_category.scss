@@ -1,7 +1,51 @@
-.sub-category__list {
+@use "fonts";
+@use 'color_sheme_default';
+
+
+.category__wrapper {
+  position: relative;
+}
+.sub-category__wrapper {
   display: none;
+  position: absolute;
+  left: 100%;
+  top: 0;
+ }
+.sub-category__list {
+  
 }
 
-.category__item:hover > .sub-category__list {
+.category__item:hover > .sub-category__wrapper {
   display: flex;
+  
+}
+.category__icon-test {
+  
+  background-image: url('#category_icon.svg');
+  
+}
+.category__item {
+  a {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: color_sheme_default.$text-title-color;
+    font-size: 1.15rem;
+    gap: 1rem;
+  }
+}
+.category__icon {
+  width: 50px;
+  height: 50px;
+}
+.category__arrow {
+  align-self: center;
+  margin-left: auto;
+  margin-right: 0;
+  width: 7px;
+  height: 15px;
+}
+.item__name {
+  @include fonts.montserrat-regular;
+  width: 13.6rem;
 }

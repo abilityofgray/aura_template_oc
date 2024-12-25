@@ -76,12 +76,23 @@ module.exports = {
   plugins: [
     new NodePolyfillPlugin(),
     new HtmlWebpackPlugin({ 
+      filename: './index.twig',
       template: './index.twig',
       //inject: 'body'
     }),
     new HtmlWebpackPlugin({
       filename: './blocks/header.twig',
       template: './blocks/header.twig',
+      inject: false,
+    }),
+    new HtmlWebpackPlugin({
+      filename: './blocks/header-nav.twig',
+      template: './blocks/header-nav.twig',
+      inject: false,
+    }),
+    new HtmlWebpackPlugin({
+      filename: './blocks/catalog.twig',
+      template: './blocks/catalog.twig',
       inject: false,
     }),
     new MiniCssExtractPlugin({ filename: 'stylesheet.css'}),
