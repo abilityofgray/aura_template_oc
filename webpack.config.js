@@ -6,6 +6,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 //import HtmlWebpackPlugin from 'html-webpack-plugin';
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
+const { watch } = require('fs');
 //import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 //import SvgChunkWebpackPlugin from 'svg-chunk-webpack-plugin';
 //const SvgChunkWebpackPlugin = require("svg-chunk-webpack-plugin");
@@ -15,14 +16,15 @@ module.exports = {
   entry: './index.js',
   mode: 'development',
   output: {
-    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
+    filename: 'main.js',
   },
-  
+  //watch: true,
   devServer: {
     static: './dist',
     port: 9000,
-    historyApiFallback: true
+    historyApiFallback: true,
+    
   },
   module: {
     rules: [
@@ -76,9 +78,8 @@ module.exports = {
   plugins: [
     new NodePolyfillPlugin(),
     new HtmlWebpackPlugin({ 
-      
       template: './index.twig',
-      inject: true,
+      /*inject: 'body', */
     }),
     new HtmlWebpackPlugin({
       filename: './blocks/header.twig',

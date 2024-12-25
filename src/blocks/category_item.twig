@@ -1,5 +1,4 @@
 <li class="category__item">
-  
   <a href="">
     <svg class="category__icon">
       <use xlink:href="#category_icon"></use>
@@ -9,11 +8,11 @@
       <use xlink:href="#catalog_item_arrow"></use>
     </svg>
   </a>
-  <div class="sub-category__wrapper dfsgsdsdfdf">
-    {% set sub_category_type = 1 %}
+  <div class="sub-category__wrapper">
+    {% set sub_category_type = 2 %}
     {% if  sub_category_type == 1 %}
       {% include './sub_category_list.twig' %}
-    {% elseif sub_category_type == 1 %}
+    {% elseif sub_category_type == 2 %}
       {% include './sub_category_col.twig' %}
     {% endif %}
   </div>
