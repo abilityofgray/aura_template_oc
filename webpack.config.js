@@ -15,6 +15,7 @@ module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: './index.js',
   mode: 'development',
+  
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
@@ -68,7 +69,7 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loader: 'svg-sprite-loader'
+        loader: 'svg-sprite-loader',
       }
       
       
@@ -79,6 +80,7 @@ module.exports = {
     new NodePolyfillPlugin(),
     new HtmlWebpackPlugin({ 
       template: './index.twig',
+      inject: false,
       /*inject: 'body', */
     }),
     new HtmlWebpackPlugin({

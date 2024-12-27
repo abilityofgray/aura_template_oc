@@ -2,11 +2,20 @@
 @use 'color_sheme_default';
 
 
+@mixin category_border {
+  border-left: 1px solid #DEDEDE;
+  border-right: 1px solid #DEDEDE;
+}
+
 .category__wrapper {
   position: relative;
+  @include category_border;
+  
 }
 .sub-category__wrapper {
+  width: 1176px;
   display: none;
+  grid-template-columns: 1fr 1fr;
   position: absolute;
   left: 100%;
   top: 0;
@@ -16,7 +25,7 @@
 }
 
 .category__item:hover > .sub-category__wrapper {
-  display: flex;
+  display: grid;
   
 }
 .category__icon-test {
@@ -25,6 +34,9 @@
   
 }
 .category__item {
+  &:hover {
+    background-color: color_sheme_default.$item-hover-color;
+  }
   a {
     display: flex;
     align-items: center;
@@ -37,13 +49,15 @@
 .category__icon {
   width: 50px;
   height: 50px;
+  
 }
 .category__arrow {
   align-self: center;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 9px;
   width: 7px;
   height: 15px;
+  
 }
 .item__name {
   @include fonts.montserrat-regular;

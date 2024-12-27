@@ -1,0 +1,14 @@
+.sub-category_col-2 {
+  display: grid;
+  //grid-template-columns: repeat(2, 264px);
+  grid-template-columns: 50% 50%;
+  grid-auto-flow: row;
+  grid-row-gap: 25px;
+}
+.sub-category_col-3 {
+  display: grid;
+  //grid-template-columns: repeat(3, 264px);
+  grid-template-columns: repeat(3, 33.33%);
+  grid-auto-flow: row;
+  grid-row-gap: 25px;
+}
