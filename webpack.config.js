@@ -10,12 +10,16 @@ const { watch } = require('fs');
 //import NodePolyfillPlugin from 'node-polyfill-webpack-plugin';
 //import SvgChunkWebpackPlugin from 'svg-chunk-webpack-plugin';
 //const SvgChunkWebpackPlugin = require("svg-chunk-webpack-plugin");
+//import SvgChunkWebpackPlugin from 'svg-chunk-webpack-plugin';
+
+
+
 
 module.exports = {
   context: path.resolve(__dirname, 'src'),
   entry: './index.js',
   mode: 'development',
-  
+  target: 'web',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',
@@ -29,6 +33,11 @@ module.exports = {
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+      },
       {
         test: /\.txt$/, 
         use: "raw-loader",
@@ -69,18 +78,21 @@ module.exports = {
       },
       {
         test: /\.svg$/,
-        loader: 'svg-sprite-loader',
+        use: [
+          { loader: 'svg-sprite-loader'},
+          'svg-transform-loader',
+          'svgo-loader'
+        ]
       }
       
-      
-      
+
     ],
   },
   plugins: [
     new NodePolyfillPlugin(),
     new HtmlWebpackPlugin({ 
       template: './index.twig',
-      inject: false,
+      //inject: true,
       /*inject: 'body', */
     }),
     new HtmlWebpackPlugin({
